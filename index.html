@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pritika Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="fanta.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+</head>
+<body>
+    <header>
+        <a href="/">Pritika Pradhan</a>
+        <nav>
+            <a target="_blank" href="https://github.com/pritikapradhan"><i class="fa-brands fa-github"></i></a> 
+            <a target="_blank" href="https://www.linkedin.com/in/pritika-pradhan"><i class="fa-brands fa-linkedin"></i></a>
+
+        </nav>
+    </header>   
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1>Hi, I'm Pritika...</h1>
+                <p>Computer Science Student at UC Santa Cruz</p>
+            </div>
+            <h5 class="intro-description">I'm a CS student interested in AI and full-stack web development. I love to do outside activities, spend time with friends, and watch movies.</h5>
+            <div class="links-container">
+                <i class="fa-solid link-arrow fa-right-long"></i>
+                <a href="mailto:pspradha@ucsc.edu">Email Me</a>
+                <a target="_blank" href="https://github.com/pritikapradhan">GitHub</a> 
+                <a target="_blank" href="https://www.linkedin.com/in/pritika-pradhan">LinkedIn</a>
+
+            </div>
+            <div id="play-game">
+                <button onclick="playGame()">Play Game???</button>
+            </div>
+            <div style="display: none;" class="color-div">
+                <h4>Pick a color</h4>
+                <p style="display: none;">Great... now it's ruined!</p>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+                <button style="display: none;" onclick="resetColor()">Reset</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>React | Node JS</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Data Analysis | Machine Learning</td>
+                    </tr>
+                    <tr>
+                        <td>Web</td>
+                        <td>GIT | HTML | CSS</td>
+                    </tr>
+                    <tr>
+                        <td>Design</td>
+                        <td>Figma | Canva</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <p>July 20, 2026</p>
+                        <h4>Brogram</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>ReactJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>FantaCSS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                        <p>The Simple 30 Workouts Training Program</p>
+                        <div class="project_links">
+                            <a target="_blank" href="slaygram.netlify.app">Live</a>
+                            <a target="_blank" href="https://github.com/pritikapradhan/2_brogram">Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/1_web_portfolio/public/Brogram_Screenshot.png" alt="my-thumbnail"/>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        <p>September 7, 2026</p>
+                        <h4>Smol Store</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Stripe</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Full Stack</p>
+                            </div>
+                        </div>
+                        <p>A super cool store with merch for programmers and productivity fiends!</p>
+                        <div class="project_links">
+                            <a target="_blank" href="https://main.d6k85pcj9p60n.amplifyapp.com">Live</a>
+                            <a target="_blank" href="https://github.com/pritikapradhan/3_smolstore">Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/1_web_portfolio/public/Smolstore_screenshot.png" alt="my-thumbnail"/>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>September 20, 2026</p>
+                        <h4>Expenny - A Subscription Tracker</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Firebase</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Full Stack</p>
+                            </div>
+                        </div>
+                        <p>Track all your subscription analytics</p>
+                        <div class="project_links">
+                            <a target="_blank" href="https://expennee.netlify.app/">Live</a>
+                            <a target="_blank" href="https://github.com/pritikapradhan/4_expenny">Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/1_web_portfolio/public/Expenny_Screenshot.png" alt="my-thumbnail"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>By <a href="" target="_blank">Pritika</a> ⭐️ the repo on <a target="_blank" href="https://github.com/pritikapradhan">Github</a></p>
+    </footer>
+    <script>
+        // This is where we create the interactivity for the "Play Game" button and the color picker.
+        // 1. select all html content that we need to manipulate
+        const body = document.querySelector("body");
+        const colorInput = document.getElementById("color-picker");
+        const colorDiv = document.querySelector(".color-div");
+        const hiddenText = document.querySelector(".color-div p");
+        const resetBtn = document.querySelector(".color-div button");
+        const playBtn = document.getElementById("play-game");
+
+        // 2. create the function
+        function playGame() {
+            colorDiv.style.display = "block";
+            playBtn.style.display = "none";
+        }
+
+        function changeColor() {
+            const selectedColor = colorInput.value;
+            body.style.background = selectedColor;
+            resetBtn.style.display = "block";
+            hiddenText.style.display = "block";
+            colorInput.style.display = "none";
+        }
+
+        function resetColor() {
+            body.style.background = "white";
+            colorInput.style.display = "block";
+            playBtn.style.display = "block";
+
+            hiddenText.style.display = "none";
+            resetBtn.style.display = "none";
+            colorDiv.style.display = "none";
+            
+        }
+
+        // 3. assign functions to the button
+
+
+    </script>
+</body>
+</html>
